@@ -1,4 +1,5 @@
 # Netwrix Search API Module
+[![Build Status](https://travis-ci.org/BongoEADGC6/netwrix-api.svg?branch=master)](https://travis-ci.org/BongoEADGC6/netwrix-api)
 
 This is a python3 library to interact with [Netwrix Auditor](https://www.netwrix.com/auditor.html) 
 
