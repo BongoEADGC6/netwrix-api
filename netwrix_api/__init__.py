@@ -4,7 +4,6 @@ import sys
 import requests
 import json
 import logging
-import pprint
 
 name = "netwrix_api"
 
@@ -37,17 +36,17 @@ class NetwrixAPI:
                 return response.json()
         elif response.status_code == 404 and\
                 response.json()['status'] == "No objects found.":
-            print("API was Unable to complete query -- Response: {} - {}"
-                  .format(response.status_code, response.json()['status']))
-            sys.exit(1)
+            msg = "API was Unable to complete query -- Response: {} - {}"\
+                  .format(response.status_code, response.json()['status'])
+            raise Exception(msg)
         elif response.status_code == 401:
-            print("API was Unable to complete query -- Response: {} - {}"
-                  .format(response.status_code, response.json()['status']))
-            sys.exit(1)
+            msg = "API was Unable to complete query -- Response: {} - {}"\
+                  .format(response.status_code, response.json()['status'])
+            raise Exception(msg)
         elif response.status_code == 500:
-            print("API Response - {} - {}".format(response.json()['status'],
-                                                  response.json()['errors']))
-            sys.exit(1)
+            msg = "API Response - {} - {}".format(response.json()['status'],
+                                                  response.json()['errors'])
+            raise Exception(msg)
         else:
             logging.debug("Returned Data: {}".format(response.json()))
             response.raise_for_status()
