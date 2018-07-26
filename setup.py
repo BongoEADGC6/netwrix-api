@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="netwrix-api",
-    version="0.0.6",
+    version="0.0.7",
     author="Cliff Hults",
     author_email="bongoeadgc6@gmail.com",
     description="A library to interact with Netwrix Search API",
