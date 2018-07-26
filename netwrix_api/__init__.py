@@ -7,6 +7,7 @@ import logging
 
 name = "netwrix-api"
 
+
 class NetwrixAPI:
     def __init__(self, host, api_user, api_pass, port="9699"):
         endpoint_uri = "netwrix/api/v1"
@@ -98,5 +99,3 @@ class NetwrixAPI:
         if after is not None:
             filter_list['After'] = after
         return event_filter
-
-
