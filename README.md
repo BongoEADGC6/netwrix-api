@@ -5,7 +5,7 @@ This is a python3 library to interact with [Netwrix Auditor](https://www.netwrix
 
 Example:
 ```
-from netwrix-api import Netwrix
+from netwrix_api import Netwrix
 
 
 filter_data = {
