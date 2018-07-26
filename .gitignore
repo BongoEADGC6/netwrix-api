@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 check_*.py
+=======
+>>>>>>> 0f463fefc5f2fa3fc9ebba7fcee853a793cfd762
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -87,7 +90,10 @@ celerybeat-schedule
 .venv
 env/
 venv/
+<<<<<<< HEAD
 venv-*/
+=======
+>>>>>>> 0f463fefc5f2fa3fc9ebba7fcee853a793cfd762
 ENV/
 env.bak/
 venv.bak/
