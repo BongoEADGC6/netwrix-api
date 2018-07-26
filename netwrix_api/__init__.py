@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
+
 import sys
 import requests
 import json
 import logging
+
+__author__ = 'BONGEADGC6'
 
 name = "netwrix-api"
 
