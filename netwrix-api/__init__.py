@@ -5,7 +5,7 @@ import requests
 import json
 import logging
 
-name = "netwrix_api"
+name = "netwrix-api"
 
 class NetwrixAPI:
     def __init__(self, host, api_user, api_pass, port="9699"):
