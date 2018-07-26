@@ -1,0 +1,6 @@
+language: python
+python:
+    - "3.6.3"
+install:
+    - pip install pep8
+script: pep8 netwrix_api/__init__.py
