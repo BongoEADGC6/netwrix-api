@@ -3,7 +3,7 @@
 
 This is a python3 library to interact with [Netwrix Auditor](https://www.netwrix.com/auditor.html) 
 
-For parameters in in the filter_data dictionary, see [this link](https://helpcenter.netwrix.com/API/Filter_Reference_Information.html)
+For parameters in in the filter_data dictionary, see [this link](https://helpcenter.netwrix.com/API/Filter_Filters.html)
 ```
 pip install netwrix-api
 ```
